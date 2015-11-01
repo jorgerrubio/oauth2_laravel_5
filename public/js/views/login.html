@@ -1,0 +1,31 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<div class="panel panel-success">
+				<div class="panel-heading"><h3 class="panel-title">Login</h3></div>
+				<div class="panel-body">
+					<div class="alert alert-danger" ng-show="error.valid">
+						<strong>Whoops!</strong> <% error.message %> <br />
+					</div>
+					<form role="form" method="POST" ng-submit="login()">
+					  	<div class="form-group">
+					  		<label for="email">Email</label>
+						    <input type="email" class="form-control" name="email" placeholder="Email" ng-model="email">
+						</div>
+						<div class="form-group">
+							<label for="password">Contraseña</label>
+							<input type="password" class="form-control" name="password" ng-model="password">
+						</div>
+						<div class="checkbox">
+					    	<label>
+					    		<input type="checkbox" name="remember"> <b>Recordar</b>
+					    	</label>
+					    </div>
+					    <br>
+						<button type="submit" class="btn btn-success btn-block">Entrar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
